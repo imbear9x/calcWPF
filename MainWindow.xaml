@@ -1,0 +1,34 @@
+﻿<Window x:Class="startedWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:startedWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="cacl" Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="199*"/>
+            <ColumnDefinition Width="423*"/>
+            <ColumnDefinition Width="168*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnNumber1" Content="1" Margin="28,351,90,0" VerticalAlignment="Top" FontSize="20" Height="45" Click="BtnNumber1_Click"/>
+        <Button x:Name="btnNumber2" Content="2" HorizontalAlignment="Left" Margin="156,351,0,0" VerticalAlignment="Top" Width="82" FontSize="20" Height="45" Grid.ColumnSpan="2" Click="BtnNumber2_Click"/>
+        <Button x:Name="btnNumber3" Content="3" HorizontalAlignment="Left" Margin="87,351,0,0" VerticalAlignment="Top" Width="82" Click="BtnNumber3_Click" FontSize="20" Height="45" Grid.Column="1"/>
+        <Button x:Name="btnNumber4" Content="4" HorizontalAlignment="Left" Margin="28,290,0,0" VerticalAlignment="Top" Width="81" FontSize="20" Height="44" Click="BtnNumber4_Click"/>
+        <Button x:Name="btnNumber6" Content="6" HorizontalAlignment="Left" Margin="87,290,0,0" VerticalAlignment="Top" Width="82" FontSize="20" Height="44" Grid.Column="1" Click="BtnNumber6_Click"/>
+        <Button x:Name="btnNumber5" Content="5" HorizontalAlignment="Left" Margin="156,290,0,0" VerticalAlignment="Top" Width="82" FontSize="20" Height="44" Grid.ColumnSpan="2" Click="BtnNumber5_Click"/>
+        <Button x:Name="btnNumber7" Content="7" HorizontalAlignment="Left" Margin="28,223,0,0" VerticalAlignment="Top" Width="81" FontSize="20" Height="45" Click="BtnNumber7_Click"/>
+        <Button x:Name="btnNumber8" Content="8" HorizontalAlignment="Left" Margin="156,223,0,0" VerticalAlignment="Top" Width="82" FontSize="20" Height="45" Grid.ColumnSpan="2" Click="BtnNumber8_Click"/>
+        <Button x:Name="btnNumber9" Content="9" HorizontalAlignment="Left" Margin="87,223,0,0" VerticalAlignment="Top" Width="82" FontSize="20" Height="45" Grid.Column="1" Click="BtnNumber9_Click"/>
+        <TextBlock x:Name="txtScreen" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="142" Width="780" FontSize="72" Grid.ColumnSpan="3"/>
+        <Button x:Name="btnNumber0" Content="0" HorizontalAlignment="Left" Margin="156,165,0,0" VerticalAlignment="Top" Width="82" FontSize="20" Height="45" Grid.ColumnSpan="2" Click="BtnNumber0_Click"/>
+        <Button x:Name="btnSum" Content="+" HorizontalAlignment="Left" Margin="245,263,0,0" VerticalAlignment="Top" Width="121" Height="61" FontSize="48" Grid.Column="1" Click="BtnSum_Click"/>
+        <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Margin="245,335,0,0" VerticalAlignment="Top" Width="121" Height="61" FontSize="48" Grid.Column="1" Click="BtnMinus_Click"/>
+        <Button x:Name="btnDivision" Content="%" HorizontalAlignment="Left" Margin="414,335,0,0" VerticalAlignment="Top" Width="121" Height="61" FontSize="48" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnMultiply" Content="*" HorizontalAlignment="Left" Margin="414,258,0,0" VerticalAlignment="Top" Width="121" Height="61" FontSize="48" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" Margin="245,165,0,0" VerticalAlignment="Top" Width="290" Height="61" FontSize="48" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnClearScreen" Content="C" Margin="0,156,234,0" VerticalAlignment="Top" Height="61" FontSize="48" Grid.Column="1" FontWeight="Bold" Click="BtnClearScreen_Click" HorizontalAlignment="Right" Width="121"/>
+
+    </Grid>
+</Window>

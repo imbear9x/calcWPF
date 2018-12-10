@@ -1,0 +1,15 @@
+c:\users\admin\source\repos\startedWPF\startedWPF\bin\Debug\startedWPF.exe.config
+c:\users\admin\source\repos\startedWPF\startedWPF\bin\Debug\startedWPF.exe
+c:\users\admin\source\repos\startedWPF\startedWPF\bin\Debug\startedWPF.pdb
+c:\users\admin\source\repos\startedWPF\startedWPF\obj\Debug\startedWPF.csprojAssemblyReference.cache
+c:\users\admin\source\repos\startedWPF\startedWPF\obj\Debug\MainWindow.g.cs
+c:\users\admin\source\repos\startedWPF\startedWPF\obj\Debug\App.g.cs
+c:\users\admin\source\repos\startedWPF\startedWPF\obj\Debug\startedWPF_MarkupCompile.cache
+c:\users\admin\source\repos\startedWPF\startedWPF\obj\Debug\startedWPF_MarkupCompile.lref
+c:\users\admin\source\repos\startedWPF\startedWPF\obj\Debug\MainWindow.baml
+c:\users\admin\source\repos\startedWPF\startedWPF\obj\Debug\startedWPF.g.resources
+c:\users\admin\source\repos\startedWPF\startedWPF\obj\Debug\startedWPF.Properties.Resources.resources
+c:\users\admin\source\repos\startedWPF\startedWPF\obj\Debug\startedWPF.csproj.GenerateResource.cache
+c:\users\admin\source\repos\startedWPF\startedWPF\obj\Debug\startedWPF.csproj.CoreCompileInputs.cache
+c:\users\admin\source\repos\startedWPF\startedWPF\obj\Debug\startedWPF.exe
+c:\users\admin\source\repos\startedWPF\startedWPF\obj\Debug\startedWPF.pdb
