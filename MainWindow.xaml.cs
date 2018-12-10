@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +25,6 @@ namespace startedWPF
         public MainWindow()
         {
             InitializeComponent();
-            lastChar = txtScreen.Text.Substring(txtScreen.Text.Length - 1, 1);
         }
         
         private void BtnNumber1_Click(object sender, RoutedEventArgs e)
@@ -153,13 +153,14 @@ namespace startedWPF
 
         private void BtnMinus_Click(object sender, RoutedEventArgs e)
         {
+            lastChar = txtScreen.Text.Substring(txtScreen.Text.Length - 1, 1);
             if (lastChar=="-") {
                 return;
             }
-            if ("+ * %".ToLower().Contains(lastChar))
+            if ("+ * /".ToLower().Contains(lastChar))
             {
-                txtScreen.Text.Remove(txtScreen.Text.Length - 1, 1);
-                txtScreen.Text += "-";
+                string stamp = txtScreen.Text.Remove(txtScreen.Text.Length - 1);
+                txtScreen.Text = stamp;
             }
             txtScreen.Text += "-";
 
@@ -167,16 +168,52 @@ namespace startedWPF
 
         private void BtnSum_Click(object sender, RoutedEventArgs e)
         {
+            lastChar = txtScreen.Text.Substring(txtScreen.Text.Length - 1, 1);
             if (lastChar == "+")
             {
                 return;
             }
-            if ("- * %".ToLower().Contains(lastChar))
+            if ("- * /".ToLower().Contains(lastChar))
             {
-                txtScreen.Text.Remove(txtScreen.Text.Length - 1, 1);
-                txtScreen.Text += "-";
+                string stamp = txtScreen.Text.Remove(txtScreen.Text.Length - 1);
+                txtScreen.Text = stamp;
             }
-            txtScreen.Text += "+";
+            txtScreen.Text += (sender as Button).Content.ToString();
+        }
+
+        private void BtnMultiply_Click(object sender, RoutedEventArgs e)
+        {
+            lastChar = txtScreen.Text.Substring(txtScreen.Text.Length - 1, 1);
+            if (lastChar == "*")
+            {
+                return;
+            }
+            if ("- + /".ToLower().Contains(lastChar))
+            {
+                string stamp = txtScreen.Text.Remove(txtScreen.Text.Length - 1);
+                txtScreen.Text = stamp;
+            }
+            txtScreen.Text += (sender as Button).Content.ToString();
+        }
+
+        private void BtnDivision_Click(object sender, RoutedEventArgs e)
+        {
+            lastChar = txtScreen.Text.Substring(txtScreen.Text.Length - 1, 1);
+            if (lastChar == "/")
+            {
+                return;
+            }
+            if ("- * +".ToLower().Contains(lastChar))
+            {
+                string stamp = txtScreen.Text.Remove(txtScreen.Text.Length - 1);
+                txtScreen.Text = stamp;
+            }
+            txtScreen.Text += (sender as Button).Content.ToString();
+        }
+
+        private void BtnEqual_Click(object sender, RoutedEventArgs e)
+        {
+            txtScreen.Text = new DataTable().Compute(txtScreen.Text, null).ToString();
         }
     }
 }

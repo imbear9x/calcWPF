@@ -25,9 +25,9 @@
         <Button x:Name="btnNumber0" Content="0" HorizontalAlignment="Left" Margin="156,165,0,0" VerticalAlignment="Top" Width="82" FontSize="20" Height="45" Grid.ColumnSpan="2" Click="BtnNumber0_Click"/>
         <Button x:Name="btnSum" Content="+" HorizontalAlignment="Left" Margin="245,263,0,0" VerticalAlignment="Top" Width="121" Height="61" FontSize="48" Grid.Column="1" Click="BtnSum_Click"/>
         <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Margin="245,335,0,0" VerticalAlignment="Top" Width="121" Height="61" FontSize="48" Grid.Column="1" Click="BtnMinus_Click"/>
-        <Button x:Name="btnDivision" Content="%" HorizontalAlignment="Left" Margin="414,335,0,0" VerticalAlignment="Top" Width="121" Height="61" FontSize="48" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <Button x:Name="btnMultiply" Content="*" HorizontalAlignment="Left" Margin="414,258,0,0" VerticalAlignment="Top" Width="121" Height="61" FontSize="48" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" Margin="245,165,0,0" VerticalAlignment="Top" Width="290" Height="61" FontSize="48" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnDivision" Content="/" HorizontalAlignment="Left" Margin="414,335,0,0" VerticalAlignment="Top" Width="121" Height="61" FontSize="48" Grid.Column="1" Grid.ColumnSpan="2" Click="BtnDivision_Click"/>
+        <Button x:Name="btnMultiply" Content="*" HorizontalAlignment="Left" Margin="414,258,0,0" VerticalAlignment="Top" Width="121" Height="61" FontSize="48" Grid.Column="1" Grid.ColumnSpan="2" Click="BtnMultiply_Click"/>
+        <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" Margin="245,165,0,0" VerticalAlignment="Top" Width="290" Height="61" FontSize="48" Grid.Column="1" Grid.ColumnSpan="2" Click="BtnEqual_Click"/>
         <Button x:Name="btnClearScreen" Content="C" Margin="0,156,234,0" VerticalAlignment="Top" Height="61" FontSize="48" Grid.Column="1" FontWeight="Bold" Click="BtnClearScreen_Click" HorizontalAlignment="Right" Width="121"/>
 
     </Grid>
